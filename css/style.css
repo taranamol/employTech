@@ -10,12 +10,12 @@ body {
     line-height: 1.52;
     color: #717f86;
     font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
-ol, ul {
+/*ol, ul {
 	list-style: none;
-}
+}*/
 blockquote, q {
 	quotes: none;
 }
@@ -32,21 +32,21 @@ table {
 	padding: 60px 0px;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: Open Sans, sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: #4B4B4C;
 }
 a{
-    color: #5fcf80;
+    color: #16193B;
 }
 a:hover, a:focus{
-    color: #5fcf80;
+    color: #383B45;
 }
 /***********************************
 Navigation bar
 ************************************/
 .navbar-default .navbar-brand {
-    color: #5FCF80;
+    color: #16193B;
 }
 .navbar-default {
     background-color: #ffffff;
@@ -55,9 +55,9 @@ Navigation bar
     padding: 84px;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #717f86;
-    font-size: 14px;
-    font-weight: 700;
+    color: #16193B;
+    font-size: 18px;
+    font-weight: 100;
 }
 .navbar-nav > li > a{
 	padding: 0px;
@@ -66,30 +66,29 @@ Navigation bar
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover
 {
-	color: #5FCF80;
+	color: #ECA400;
 }
 
 .navbar-nav .active a{
     background: none !important;
-    color: #5FCF80 !important;
+    color: #16193B !important;
     outline: none;
 }
 
 .btn-trial a{
-	background-color: #5FCF80;
-	border-radius: 25px;
+	background-color: #ECA400;
 	color: #ffffff !important;
-	border: 1px solid #5FCF80;
+	border: 2px solid #ECA400;
 }
 .btn-trial a:hover, .btn-trial a:focus{
-	border: 1px solid #5FCF80;
+	border: 2px solid #16193B;
 	background-color: #fff;
-	color: #5FCF80 !important;
+	color: #16193B !important;
 }
 .navbar-default .navbar-brand {
-    font-family: 'Dosis', sans-serif !important;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400;
+    /*text-transform: uppercase;*/
     padding: 0px;
     height: inherit;
     font-size: 36px;
@@ -111,32 +110,87 @@ Navigation bar
 Banner
 ************************************/
 .banner{
-	background: url('../img/bg-banner.jpg') no-repeat center top;
+	background: url('../img/CityPerson.jpg') no-repeat center top;
     background-size: cover;
 	min-height: 580px;
     position: relative;
 }
+.index-banner{
+    background: url('../img/backpackperson.jpg') no-repeat center top;
+    background-size: cover;
+    min-height: 580px;
+    position: relative;
+}
+.about-us-banner{
+    background: url('../img/girl.jpg') no-repeat center top;
+    background-size: cover;
+    min-height: 580px;
+    position: relative;
+}
+.training-banner{
+    background: url('../img/colorbooks.jpg') no-repeat center top;
+    background-size: cover;
+    min-height: 580px;
+    position: relative;
+}
+.contact-us-banner{
+    background: url('../img/course05.jpg') no-repeat center top;
+    background-size: cover;
+    min-height: 580px;
+    position: relative;
+}
+.donate-banner{
+    background: url('../img/person.jpg') no-repeat center top;
+    background-size: cover;
+    min-height: 580px;
+    position: relative;
+}
 .bg-color{
-	background-color: RGBA(12, 11, 11, 0.82);
+	background-color: rgba(250, 250, 250, 0.4);
 	min-height: 580px;
 }
+.index-text-dec{
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    /*text-transform: uppercase;*/
+    color: #fff;
+    min-width: 250px;
+}
 .text-dec{
-	font-size: 24px;
+	font-size: 48px;
+    font-weight: 500;
 	padding: 10px 20px;
     margin: 15px 0;
-	text-transform: uppercase;
-    color: #fff;
+	/*text-transform: uppercase;*/
+    color: #333333;
+    min-width: 200px;
 }
 .text-border{
-	border: 5px solid #5FCF80;
 	display: inline-block;
-	margin-top: 150px;
+	margin-top: 350px;
+}
+.index-border-box{
+    border: 3px solid #ECA400;
+    display: inline-block;
+    margin-top: 350px;
+    background-color: #ECA400;
+}
+.index-border-box .index-text-dec:hover{
+    color: #ECA400;
+}
+.index-border-box:hover{
+    border: 3px solid #16193B;
+    display: inline-block;
+    margin-top: 350px;
+    background-color: #ECA400;
+    color: #16193B;
 }
 .intro-para{
-	font-family: 'Alegreya Sans', sans-serif;
 	font-size: 45px;
-	color: #fff;
-	margin-top: 30px;
+	color: #333333;
+	margin-top: 300px;
+    font-weight: 500;
 }
 .quote .btn{
     background-color: 
@@ -220,7 +274,7 @@ Banner
     font-size: 16px;
 }
 .quote .btn{
-    background-color: #5fcf80;
+    background-color: #16193B;
     color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -229,7 +283,7 @@ Banner
 }
 .quote .btn:hover, .quote .btn:focus{
     background-color: #fff;
-    color: #5fcf80;
+    color: #16193B;
     border-color: #fff;
      -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -258,7 +312,7 @@ h2{
 }
 .fea i {
     font-size: 39px;
-    color: #5FCF80;
+    color: #16193B;
     margin-top: 7px;
 }
 .heading h4 {
@@ -280,7 +334,7 @@ h2{
 }
 .orga-stru
 {
-    background-color: #5FCF80;
+    background-color: #16193B;
     width: 109px;
     height: auto;
     padding: 10px 10px 25px 10px;
@@ -314,7 +368,7 @@ h3.det-txt {
     text-transform: uppercase;
 }
 h4.sm-txt {
-    color: #5FCF80;
+    color: #16193B;
     font-size: 24px;
 }
 p.det-p {
@@ -327,6 +381,7 @@ p.det-p {
 Cta
 ************************************/
 #cta-2{
+    background-color: #F9F9F9;
     padding: 140px 0;
 }
 .cta-2-txt {
@@ -345,7 +400,7 @@ Cta
     min-width: 280px;
     margin-left: -4px;
     margin-bottom: 2px;
-    border: 1px solid #5fcf80;
+    border: 1px solid #16193B;
     background-color: rgb(247, 247, 247);
     border-radius: 30px 0px 0px 30px;
 }
@@ -353,7 +408,7 @@ Cta
     font-size: 18px;
     text-transform: capitalize;
     color: #fff;
-    background-color: #5fcf80;
+    background-color: #16193B;
     border: 2px solid #fff;
     padding: 14px 30px;
     margin-left: -4px;
@@ -368,7 +423,7 @@ Cta
 Work Shop
 ************************************/
 #work-shop {
-    background-color: rgb(247, 247, 247);
+    background-color: #11607F;
 }
 .service-box{
     background: #fff;
@@ -376,7 +431,7 @@ Work Shop
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
 }
 .icon-box i {
-    color: #5FCF80;
+    color: #16193B;
     font-size: 65px;
 }
 .ser-text {
@@ -418,7 +473,7 @@ Mentor Team
 Testimonial
 ************************************/
 #testimonial{
-    background-color: #111;
+    background-color: #1887B2;
 }
 .bg-white{
     background-color: #fff !important;
@@ -435,10 +490,10 @@ Testimonial
 Course
 ************************************/
 [class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
-    background-color: #5FCF80;
+    background-color: #16193B;
 }
 [class*=" imghvr-"], [class^="imghvr-"] {
-    background-color: #5FCF80;
+    background-color: #16193B;
     color: #fff;
 }
 /***********************************
@@ -482,7 +537,7 @@ Price Table
     padding: 20px 0px;
     font-weight: bold !important;
     font-size: 14px;
-    background-color: #5fcf80;
+    background-color: #16193B;
 }
 /***********************************
 Contact Us
@@ -551,8 +606,8 @@ Contact Us
 Footer
 ************************************/
 .footer {
-    padding: 60px 0 20px;
-    background: #111;
+    padding: 0px 0 20px;
+    background: #16193B;
     color: #ccc;
 }
 .footer a {
@@ -600,14 +655,14 @@ Footer
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 .btn-submit:hover, .btn-submit:focus{
-    background-color: #5fcf80;
+    background-color: #16193B;
     color: #fff;
 }
 .btn-submit{
 	padding: 14px 12px;
 	border-radius: 50px;
 	text-transform: uppercase;
-    background-color: #5fcf80;
+    background-color: #16193B;
     color: #fff;
 }
 .btn-submit i{
@@ -655,7 +710,7 @@ Footer
     padding: 10px 20px;
 }
 .light-form-button{
-    background: #5fcf80;
+    background: #16193B;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
     padding: 10px 10px;
@@ -669,7 +724,7 @@ Footer
   transition: all 0.3s ease-in-out;
 }
 .btn-green, .btn-green:hover{
-    background-color: #5fcf80;
+    background-color: #16193B;
     color: #fff;
 }
 .footer .form-control:focus{
