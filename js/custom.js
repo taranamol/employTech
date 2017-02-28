@@ -25,4 +25,10 @@
             window.location.hash = hash;
         });
     });
+
+    $(".navbar-default .navbar-brand span").on('click', function(event) {
+        window.location.href = "home.html";
+    });
+
+
 })(jQuery);
