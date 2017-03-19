@@ -16,15 +16,35 @@ if (empty($_POST["email"])) {
     $email = $_POST["email"];
 }
 
+// COMPANY
+if (!empty($_POST["company"])) {
+    $company = $_POST["company"];
+}
+
+// TITLE
+if (!empty($_POST["title"])) {
+    $title = $_POST["title"];
+}
+
 // MESSAGE
-if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
-} else {
+if (!empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-$message = "wrong answer";
-echo "<script type='text/javascript'>alert('$message');</script>";
+// INDUSTRY
+if (!empty($_POST["industry"])) {
+    $industry = $_POST["industry"];
+}
+
+// MENTOR MESSAGE
+if (!empty($_POST["mentormessage"])) {
+    $mentormessage = $_POST["mentormessage"];
+}
+
+// PHONE
+if (!empty($_POST["phone"])) {
+    $phone = $_POST["phone"];
+}
 
 $EmailTo = "tarskaur@gmail.com";
 $Subject = "New Message Received";
@@ -37,11 +57,26 @@ $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
+$Body .= "Phone: ";
+$Body .= $phone;
+$Body .= "\n";
 $Body .= "Subject: ";
 $Body .= $msg_subject;
 $Body .= "\n";
+$Body .= "Company: ";
+$Body .= $company;
+$Body .= "\n";
+$Body .= "Title: ";
+$Body .= $title;
+$Body .= "\n";
+$Body .= "Industry: ";
+$Body .= $industry;
+$Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
+$Body .= "\n";
+$Body .= "Mentor Message: ";
+$Body .= $mentormessage;
 $Body .= "\n";
 
 // send email

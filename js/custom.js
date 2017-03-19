@@ -1,4 +1,16 @@
-(function ($) {
+$(document).ready(function(){
+
+    var a = $(".navbar").offset().top;
+
+    $(document).scroll(function(){
+        if($(this).scrollTop() > a)
+        {   
+           $('.navbar').css({"background":"white"});
+        } else {
+           $('.navbar').css({"background":"transparent"});
+        }
+    });
+
                 
     // Navigation scrolls
     $('.navbar-nav li a').bind('click', function(event) {
@@ -27,8 +39,57 @@
     });
 
     $(".navbar-default .navbar-brand span").on('click', function(event) {
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     });
 
+    $(".pm-staff-profile-name").click(function() {
+        $(".pm-staff-profile-bio").toggle();
+    });
 
-})(jQuery);
+   // $(".pm-staff-profile-name").click(function() {
+   //      // alert("hello");
+   //      $(this).closest('div').next().next(".pm-staff-profile-bio").toggle();
+   //  });  
+
+
+    $('#name').show();
+    $('#email').show();
+    $('#company').hide();
+    $('#title').hide();
+    $('#message').show();
+    $('#industry').hide();
+    $('#mentormessage').hide(); 
+    
+    $(".strategic-partner").click(function () {
+        $('#name').show();
+        $('#email').show();
+        $('#company').show();
+        $('#title').show();
+        $('#message').show();
+        $('#industry').hide();
+        $('#mentormessage').hide();   
+    });
+
+    $(".corporate-sponsor").click(function () {
+        $('#name').show();
+        $('#email').show();
+        $('#company').show();
+        $('#industry').hide();
+        $('#title').hide();
+        $('#message').hide(); 
+        $('#mentormessage').hide();   
+    });
+
+    $(".mentorship-ring").click(function () {
+        $('#name').show();
+        $('#email').show();
+        $('#company').hide();
+        $('#industry').show();
+        $('#title').show();
+        $('#message').hide(); 
+        $('#mentormessage').show();   
+    });
+
+  
+
+});

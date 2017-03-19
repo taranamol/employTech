@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EmployTech</title>
+    <title>Employtech</title>
     
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <!-- jquery -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   
   <body>
@@ -28,14 +29,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="home.html"><span>EmployTech</span></a>
-
-
+        <a class="navbar-brand" href="index.html"><span>Employtech</span></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="about_us.html#">About Us</a></li>
           <li><a href="training.html#">Training</a></li>
+          <li><a href="impact.html#">Impact</a></li>
           <li><a href="contact_us.html#">Contact Us</a></li>
           <li class="btn-trial"><a href="donate.html#">Donate</a></li>
         </ul>
@@ -43,6 +43,7 @@
       </div>
     </nav>
     <!--/ Navigation bar-->
+
     
     <!--Banner-->
     <div class="contact-us-banner">
@@ -51,8 +52,7 @@
           <div class="row">
             <div class="banner-text text-center">
               <div class="text-border">
-                <h2 class="text-dec">Contact Us</h2>
-                <a href="home.html">EmployTech</a>
+                <p class="big-text">Contact Us</p>
               </div>
             </div>
           </div>
@@ -60,28 +60,76 @@
       </div>
     </div>
     <!--/ Banner-->
+
+
+
+    <!--Banner-->
+<!--     <div class="contactmiddle-banner">
+      <div class="bg-small-color">
+        <div class="container">
+          <div class="row">
+            <div class="banner-text text-center">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Banner-->
+
     
     <!--Feature-->
     <section id ="feature" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center col-sm-8 col-sm-offset-2">
-            <h2>Interested?</h2>
+
+            <h2>Interested in joining the Employtech family?</h2>
+            
+            <div class="col-md-4">
+              <button type="button" class="btn btn-primary contact-button strategic-partner">Learn more about becoming a Strategic Partner!</button>
+            </div>
+            
+            <div class="col-md-4">
+              <button type="button" class="btn btn-primary contact-button corporate-sponsor">Interested in becoming a corporate sponsor?</button>
+            </div>
+
+            <div class="col-md-4">
+              <button type="button" class="btn btn-primary contact-button mentorship-ring">Join our Mentorship Ring!</button>
+            </div>
+
+
             <!-- Start Contact Form -->
 
-
-
-
-
-
-
-
             <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
-             <div id="msgSubmit" class="h3 text-center hidden"></div> 
+             
+             <div class="col-sm-12">
+              <div id="msgSubmit" class="text-center hidden"></div> 
+             </div>
 
               <div class="form-group">
                 <div class="controls">
                   <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+             <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="industry" class="form-control" placeholder="Industry">
+                  <div class="help-block with-errors"></div>
+                </div>  
+              </div>
+
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="company" class="form-control" placeholder="Company">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="title" class="form-control" placeholder="Title">
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
@@ -95,21 +143,31 @@
 
               <div class="form-group">
                 <div class="controls">
-                  <textarea id="message" rows="3" placeholder="Message" class="form-control" required data-error="Write your message"></textarea>
+                  <input type="number" class="form-control" id="phone" placeholder="Phone Number">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="controls">
+                  <textarea id="mentormessage" rows="3" placeholder="Why are you Interested in becoming a mentor?" class="form-control"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>  
+              </div>
+
+              <div class="form-group">
+                <div class="controls">
+                  <textarea id="message" rows="3" placeholder="Message" class="form-control"></textarea>
                   <div class="help-block with-errors"></div>
                 </div>  
               </div>
 
               <button type="submit" id="submit" class="btn btn-success"></i> Send Message</button>
               <div class="clearfix"></div>   
-
             </form>     
-            
-
-
-
 
             <!-- End Contact Form -->
+            
             <hr class="bottom-line">
           </div>
         </div>
