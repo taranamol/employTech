@@ -95,6 +95,8 @@ Navigation bar
 	background-color: #ECA400;
 	color: #ffffff !important;
 	border: 2px solid #ECA400;
+    min-width: 100px;
+    text-align: center;
 }
 .btn-trial a:hover, .btn-trial a:focus{
 	border: 2px solid #16193B;
@@ -162,7 +164,7 @@ Banner
     position: relative;
 }
 .contact-us-banner{
-    background: url('../img/classworking.JPG') no-repeat center top;
+    background: url('../img/rfav.jpg') no-repeat center top;
     background-size: cover;
     min-height: 580px;
     position: relative;
@@ -188,7 +190,7 @@ Banner
     min-height: 500px;
 }
 .aboutusmiddle-banner{
-    background: url('../img/bluepic.jpg') no-repeat center top;
+    background: url('../img/class1.jpg') no-repeat center top;
     background-size: cover;
     max-height: 400px;
     position: relative;
@@ -554,10 +556,11 @@ Mentor Team
     /*padding: 12px 0px;*/
 }
 .pm-staff-profile-bio {
-  text-transform: capitalize;
   color: #333333;
   font-weight: 300;
   display: none;
+  font-size: 18px;
+  text-align: left;
 }
 .pm-staff-profile-image:hover + .pm-staff-profile-bio {
     display: block;
@@ -658,6 +661,7 @@ Contact Us
     padding: 15px 20px !important;
     font-weight: 300; 
     white-space: normal; 
+    min-height: 140px;
 }
 .contact-button:hover, .contact-button:focus, .contact-button:active{
     border: 2px solid #16193B;
@@ -864,6 +868,12 @@ Footer
 Responsive media queries
 ************************************
 ***********************************/
+@media screen and (max-width: 990px) {
+    .contact-button {
+        height: auto;
+        width: 375px;
+    }
+}
 @media (min-width: 769px) and (max-width: 980px) {
     .ser-text {
     font-size: 20px;
@@ -876,6 +886,10 @@ Responsive media queries
     }
     .price-table .pricing-head h4 {
     font-size: 18px;
+    }
+    .contact-button {
+    height: auto;
+    min-width: 375px;
     }
 }
 @media (min-width: 451px) and (max-width: 768px) {
