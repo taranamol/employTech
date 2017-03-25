@@ -917,14 +917,26 @@ Responsive media queries
     .index-banner .big-text{
         font-size: 30px;
     }
-    .small-text {
-    font-size: 14px;
-    }
     .intro-para {
     font-size: 30px;
     }
+    h2 {
+        font-size: 22px !important;
+    }
+    h4 {
+        font-size: 20px !important;
+    }
+    li {
+        font-size: 18px;
+    }
+    p {
+        font-size: 18px;
+    }
     .header-section p{
-        font-size: 14px;
+        font-size: 18px;
+    }
+    .small-text {
+    font-size: 16px;
     }
     .heading {
     margin-bottom: 20px;
