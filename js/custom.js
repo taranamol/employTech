@@ -44,13 +44,8 @@ $(document).ready(function(){
 
     $(".pm-staff-profile-name").click(function(e) {
         $(e.target).siblings('.pm-staff-profile-bio').toggle();
-        // $(".pm-staff-profile-bio").toggle();
     });
 
-   // $(".pm-staff-profile-name").click(function() {
-   //      // alert("hello");
-   //      $(this).closest('div').next().next(".pm-staff-profile-bio").toggle();
-   //  });  
 
 
     $('#name').show();

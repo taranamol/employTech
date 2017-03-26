@@ -46,7 +46,7 @@ if (!empty($_POST["phone"])) {
     $phone = $_POST["phone"];
 }
 
-$EmailTo = "tarskaur@gmail.com";
+$EmailTo = "Rashida@employtech.net";
 $Subject = "New Message Received";
 
 // prepare email body text
@@ -59,9 +59,6 @@ $Body .= $email;
 $Body .= "\n";
 $Body .= "Phone: ";
 $Body .= $phone;
-$Body .= "\n";
-$Body .= "Subject: ";
-$Body .= $msg_subject;
 $Body .= "\n";
 $Body .= "Company: ";
 $Body .= $company;
