@@ -114,7 +114,7 @@ Navigation bar
     color: #ECA400;
 }
 .navbar-default .navbar-brand span{
-	font-weight: 400 !important;
+	font-weight: 500 !important;
     font-size: 36px;
 }
 .navbar {
@@ -126,6 +126,15 @@ Navigation bar
 .mart20{
 	margin-top: 20px;
 }
+
+.padding0 {
+    padding-bottom: 0px !important;
+}
+
+.padding25 {
+    padding-bottom: 25px;
+}
+
 /***********************************
 Banner
 ************************************/
@@ -479,7 +488,7 @@ Cta
     padding: 90px 0;
 }
 #cta-2 h2 {
-    text-align: center; 
+   
 }
 #cta-2 p, #cta-2 li, #cta-2 h2, #cta-2 h4 {
     color: #fff;
